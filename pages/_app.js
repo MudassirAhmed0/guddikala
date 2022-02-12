@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
             />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/regular.min.css"
           />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" ></script>
+        {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" ></script> */}
   </Head>
    <Component {...pageProps} />
   </>
