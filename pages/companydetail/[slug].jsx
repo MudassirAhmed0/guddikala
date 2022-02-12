@@ -31,7 +31,7 @@ const CompantDetail = ()  => {
   
   useEffect(()=>{
      
-    const symbol = router.query.slug  
+    const symbol = router?.query?.slug   
     const getData =async()=>{
       if(symbol){
      
