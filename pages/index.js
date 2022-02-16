@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Filter from '../components/Filter'
 import Pagination from '../components/Pagination'
-import { countryFilters, industryFilters, mainFilters, mkCapFilters, searchFilter, sectorFilters } from '../assets/data/filtersData';
+import { countryFilters, industryFilters, mainFilters, mkCapFilters, sectorFilters } from '../assets/data/filtersData';
 import Newcard from '../components/Newcard'
 import Layout from '../components/Layout'
 
@@ -13,9 +13,10 @@ export default function Home() {
   const [filter, setFilter] = useState('')
   const [lastPageNo, setLastPageNo] = useState(1)
   const [pageNo, setPageNo] = useState(1)
+  const [search, setSearch] = useState([])
 
 
-   useEffect(() => {
+  useEffect(() => {
     setPageNo(1)
   }, [mainFilter])
 
@@ -60,6 +61,12 @@ export default function Home() {
         setAllcompany(res?.data[0]?.items)
       })
   }
+  const handleChangeSearch = (newValue) => {
+    axios.get(`https://humbletitanapi.herokuapp.com/companynames?companyname=${newValue?.value}`)
+      .then(res => {
+        setAllcompany(res?.data)
+      })
+  }
 
   const getData = (pageNo) => {
 
@@ -71,8 +78,18 @@ export default function Home() {
         setAllcompany(res?.data[0]?.items)
       })
   }
- useEffect(() => {
+
+  const getSearch = () => {
+    const url = `https://humbletitanapi.herokuapp.com/companynames`
+    axios.get(url)
+      .then(res => {
+        console.log(res?.data, 'response hai')
+        setSearch(res?.data)
+      })
+  }
+  useEffect(() => {
     getData(pageNo)
+    getSearch()
   }, [])
   const moveForward = () => {
     setPageNo(lastPageNo)
@@ -106,9 +123,9 @@ export default function Home() {
         <meta name="description" content="Humble Titan is providing you data of more than seven thousands tickers from all over the world." />
       </Head>
       <Layout>
-      <div className="top-search-filter-abcd">
-        <Filter label='Search Compnay by name:' options={searchFilter} />
-      </div>
+        <div className="top-search-filter-abcd">
+          <Filter label='Search Compnay by name:' handleChange={handleChangeSearch} options={search} />
+        </div>
         <div className="abcd_row pt-5_abcd abcd_container abcd_align-end Filters">
           <div className='abcd_col-4'>
             <Filter handleChange={handleChangeMainFilter} label='Search Ticker by:' options={mainFilters} />
@@ -137,7 +154,6 @@ export default function Home() {
           </div>
         </div>
       </Layout>
-
     </div>
   )
 }
