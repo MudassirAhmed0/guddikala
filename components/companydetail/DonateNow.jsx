@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import we_deliver_expertise from '../../assets/imgs/we-deliver-expertise.jpg'
 
 const DonateNow = () => {
@@ -26,7 +26,7 @@ const DonateNow = () => {
                         </div>
                         <div className="abcd_col-6 mt-2rem_abcd full-width_abcd">
                             <div className="img_container_abcd">
-                                <Image className="b-rad-12_abcd" src={we_deliver_expertise}
+                                <img className="b-rad-12_abcd" src="https://www.designinguru.com/imgs/we-deliver-expertise.jpg"
                                     alt="We Deliver Expertise" />
                             </div>
                         </div>

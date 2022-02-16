@@ -10,7 +10,7 @@ import authority_tram from '../assets/imgs/authority-tram-menu.jpg';
 import relevent_tram from '../assets/imgs/relevance-tram-menu.jpg';
 import monitoring_tram from '../assets/imgs/monitoring-tram-menu.jpg';
 import tram_banner from '../assets/imgs/tram-banner-1.png';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Header = () => {
     return (
@@ -21,8 +21,8 @@ const Header = () => {
                     <div className="abcd_row abcd_justify-between abcd_relative abcd_align-center abcd_align-center">
                         <div className="abcd_col-2">
                             <div className="header_main_logo">
-                                {/* <Image src={logo_header} alt="Humble Titan Logo" /> */}
-                                <Image src={logo_header} alt="Humble Titan Logo" />
+                                
+                                <img src="https://www.designinguru.com/imgs/HT-Standard-Logo.png" alt="Humble Titan Logo" />
                             </div>
 
                         </div>
@@ -58,7 +58,8 @@ const Header = () => {
                             </div>
                             <div className="header__secondrow_abcd abcd_row p-1_abcd abcd_justify-between  ">
                                 <div className="header_secondrow_logo_abcd displaynone_abcd">
-                                    <Image src={logo_header} alt="Humble Titan Logo" />
+                                    {/* <Image src={logo_header} alt="Humble Titan Logo" /> */}
+                                    <img src="https://www.designinguru.com/imgs/HT-Standard-Logo.png" alt="Humble Titan Logo" />
                                 </div>
                                 <ul className="abcd_row abcd_justify-between abcd_nav abcd_align-center ul_abcd">
                                     <li>
@@ -79,19 +80,19 @@ const Header = () => {
                                         <ul className="abcd_servicemenu abcd_row ul_abcd">
                                             <li className="abcd_servicemenu_li">
                                                 <div className="abcd_menu_font"> <a href="https://www.humbletitan.com/services/web-design/" className="a_abcd"> Web Design</a></div>
-                                                <Image src={web_design} alt="" />
+                                                <img src="https://www.designinguru.com/imgs/web-design-menu-225x300.jpg" alt="" />
                                             </li>
                                             <li className="abcd_servicemenu_li">
                                                 <div className="abcd_menu_font"><a href="https://www.humbletitan.com/services/content-marketing/" className="a_abcd"> Content Marketing</a></div>
-                                                <Image src={content_marketing_menu} alt="" />
+                                                <img src="https://www.designinguru.com/imgs/content-marketing-menu-225x300.jpg" alt="" />
                                             </li>
                                             <li className="abcd_servicemenu_li">
                                                 <div className="abcd_menu_font"><a href="https://www.humbletitan.com/services/content-marketing/" className="a_abcd"> SEO Optimization</a></div>
-                                                <Image src={seo_menu} alt="" />
+                                                <img src="https://www.designinguru.com/imgs/seo-menu-225x300.jpg" alt="" />
                                             </li>
                                             <li className="abcd_servicemenu_li">
                                                 <div className="abcd_menu_font"><a href="https://www.humbletitan.com/services/web-performance-management/" className="a_abcd"> Managment Services</a></div>
-                                                <Image src={management_services} alt="" />
+                                                <img src="https://www.designinguru.com/imgs/management-service-menu-225x300.jpg" alt="" />
                                             </li>
                                         </ul>
                                     </li>
@@ -134,26 +135,26 @@ const Header = () => {
                                                 </div>
                                             </li>
                                             <li className="abcd_servicemenu_li">
-                                                <div className="abcd_menu_font"><Image className="abcd_imgwidth" src={one_p}
+                                                <div className="abcd_menu_font"><img className="abcd_imgwidth" src="https://www.designinguru.com/imgs/1.png"
                                                     alt="" /></div>
-                                                <div className="abcd_menu_font"><Image className="abcd_imgwidth"
-                                                    src={technical_tram} alt="" /></div>
+                                                <div className="abcd_menu_font"><img className="abcd_imgwidth"
+                                                    src="https://www.designinguru.com/imgs/technical-tram-menu.jpg" alt="" /></div>
                                                 <div className="abcd_16font abcd_cursorpointer "><a href="https://www.humbletitan.com/tram-seo-course/technical-course/" className="a_abcd">  Technical SEO</a></div>
-                                                <div className="abcd_menu_font"><Image className="abcd_imgwidth"
-                                                    src={authority_tram} alt="" /></div>
+                                                <div className="abcd_menu_font"><img className="abcd_imgwidth"
+                                                    src="https://www.designinguru.com/imgs/authority-tram-menu.jpg" alt="" /></div>
                                                 <div className="abcd_16font abcd_cursorpointer "><a href="https://www.humbletitan.com/tram-seo-course/authority-course/" className="a_abcd">  Authority SEO</a></div>
                                             </li>
                                             <li className="abcd_servicemenu_li">
-                                                <br /><br />
-                                                <div className="abcd_menu_font"><Image className="abcd_imgwidth"
-                                                    src={relevent_tram} alt="" /></div>
+                                                <br /><br /><br /><br />
+                                                <div className="abcd_menu_font"><img className="abcd_imgwidth"
+                                                    src="https://www.designinguru.com/imgs/relevance-tram-menu.jpg" alt="" /></div>
                                                 <div className="abcd_16font abcd_cursorpointer "><a href="https://www.humbletitan.com/tram-seo-course/ranking-course/" className="a_abcd">  Ranking SEO</a></div>
-                                                <div className="abcd_menu_font"><Image className="abcd_imgwidth"
-                                                    src={monitoring_tram} alt="" /></div>
+                                                <div className="abcd_menu_font"><img className="abcd_imgwidth"
+                                                    src="https://www.designinguru.com/imgs/monitoring-tram-menu.jpg" alt="" /></div>
                                                 <div className="abcd_16font abcd_cursorpointer "><a href="https://www.humbletitan.com/tram-seo-course/monitoring-course/" className="a_abcd">  Monitoring SEO</a></div>
                                             </li>
                                             <li className="abcd_servicemenu_li">
-                                                <Image className="abcd_tramserach" src={tram_banner} alt="" />
+                                                <img className="abcd_tramserach" src="https://www.designinguru.com/imgs/tram-banner-1.png" alt="" />
                                             </li>
                                         </ul>
                                     </li>
@@ -171,7 +172,7 @@ const Header = () => {
                 <div className="topnav" id="myTopnav">
                     <div className="abcd_col-12 abcd_h-70 abcd_row justify-content">
                         <div className="header_main_logo abcd_row abcd_justify-between abcd_relative abcd_h-fit">
-                            <Image className="abcd_pt-pl" src={logo_header} alt="Humble Titan Logo" />
+                            <img className="abcd_pt-pl" src="https://www.designinguru.com/imgs/HT-Standard-Logo.png" alt="Humble Titan Logo" />
                         </div>
                         <div><a className="icon abcd_humberger">
                             <i className="fa fa-bars icon-font"></i>

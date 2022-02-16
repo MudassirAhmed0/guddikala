@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import HT_Standard_Logo from '../assets/imgs/HT-Standard-Logo.png'
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="abcd_row abcd_justify-between mb-4_abcd">
                         <div className="abcd_col-4 full-width_abcd footer_first_column_abcd">
                             <div className="footer_logo_abcd mb-2_abcd">
-                                <Image src={HT_Standard_Logo} alt="Humble Titan Logo" />
+                                <img src="https://www.designinguru.com/imgs/HT-Standard-Logo.png" alt="Humble Titan Logo" />
                             </div>
                             <p className="p_abcd">Business and politics made simple. We also deliver elite-level digital marketing
                                 services for

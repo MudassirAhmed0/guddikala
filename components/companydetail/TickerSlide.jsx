@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import Apple from '../../assets/images/logo/AAPL.png';
 
@@ -9,7 +9,7 @@ const TickerSlide = () => {
                 <a>
                     <div className='main_ticker_div'>
 
-                        <Image src={Apple} width={'22px'} alt="Apple slider" />
+                        <img src={Apple} width={'22px'} alt="Apple slider" />
                         <h4 className='ticker_font'>AAPL</h4>
                         <h4 className='ticker_font font_weight_price'>$173.07</h4>
                         <i className="fas fa-arrow-up ticker_icon_arrow"></i>

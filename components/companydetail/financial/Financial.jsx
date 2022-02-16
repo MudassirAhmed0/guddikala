@@ -1,4 +1,4 @@
-import Image from 'next/image'; 
+// import Image from 'next/image'; 
 import dd_our_services from '../../../assets/imgs/dd-our-services.jpg';
 import FinancialHealth from './FinancialHealth';
 
@@ -25,7 +25,7 @@ const Financial = ({content}) => {
                 </div>
                 <div className="abcd_col-4 full-width_abcd p-1_abcd white-bg_abcd b-rad-12_abcd">
                     <div className="img_container_abcd mb-2_abcd">
-                        <Image className="b-rad-6_abcd" src={dd_our_services} alt="dd-our-services"/>
+                        <img className="b-rad-6_abcd" src="https://www.designinguru.com/imgs/dd-our-services.jpg" alt="dd-our-services"/>
                     </div>
                     <h3 className="mb-1_abcd h3_abcd">
                         Humble Titan Web Services

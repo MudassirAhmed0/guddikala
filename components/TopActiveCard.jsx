@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import  Link  from 'next/link';
 
 
-const Newcard = ({ data }) => {
+const TopActiveCard = ({ data }) => {
     const [image, setImage] = useState(false)
     // useEffect(() => {
     //     function imageExists(image_url){
@@ -33,31 +33,21 @@ const Newcard = ({ data }) => {
 
                     </div>
                 </div>
-                <div className='mt-1-2_abcd p-1_abcd'>
-                    <div className=''>
-
-                        <h3 className="blue-color_abcd text-center_abcd h4_abcd heading_set_company abcd_justify-center">
-                            {data?.Info?.companyname ? data?.Info?.companyname : 'N/A'}
-                        </h3>
-                        <p className='abcd_row abcd_justify-center text-transform_abcd font-weight-500_abcd card-ceo-set-abcd'>ceo</p>
-                        <h4 className='abcd_row abcd_justify-center card-ceo-name-abcd'>
-                            {data?.Info?.ceo ? data?.Info?.ceo : 'N/A'}
-                        </h4>
-                    </div>
+                <div className='mt-2-2_abcd p-1_abcd'>
                     <ul className="keyvalues_abcd">
                         <li className="li_abcd">
-                            <span className='span_first_set'> <strong> Country</strong></span> <span className='span_second_set'>{data?.Info?.country ? data?.Info?.country : 'N/A'}</span>
+                            <span className='span_first_set'> <strong> Company Name</strong></span> <span className='span_second_set'>{data?.Info?.companyname ? data?.Info?.companyname : 'N/A'}</span>
                         </li>
                         <li className="li_abcd">
-                            <span className='span_first_set'> <strong>Industry</strong></span> <span className='span_second_set'>{data?.Info?.industry ? data?.Info?.industry : 'N/A'} </span>
+                            <span className='span_first_set'> <strong>Price</strong></span> <span className='span_second_set'>{data?.Info?.price ? data?.Info?.price : 'N/A'}</span>
                         </li>
                         <li className="li_abcd">
-                            <span className='span_first_set'> <strong>Sector</strong></span> <span className='span_second_set'>{data?.Info?.sector ? data?.Info?.sector : 'N/A'}</span>
-                        </li>
-                        <li className="li_abcd">
-                            <span className='span_first_set'> <strong>Market Capitalization </strong></span> <span className='span_second_set'>{data?.Info?.mktcap ? data?.Info?.mktcap : 'N/A'}
+                            <span className='span_first_set'> <strong>Changes </strong></span> <span className='span_second_set'>{data?.Info?.changes ? data?.Info?.changes : 'N/A'}
 
                             </span>
+                        </li>
+                        <li className="li_abcd">
+                            <span className='span_first_set'> <strong>Changes Percentage</strong></span> <span className='span_second_set'>{data?.Info?.changespercentage ? data?.Info?.changespercentage : 'N/A'} </span>
                         </li>
 
                     </ul>
@@ -78,4 +68,4 @@ const Newcard = ({ data }) => {
     )
 };
 
-export default Newcard;
+export default TopActiveCard;

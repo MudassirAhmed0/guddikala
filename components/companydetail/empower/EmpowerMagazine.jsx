@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import dd_business_mag from '../../../assets/imgs/dd-business-mag.jpg';
 
 const EmpowerMagazine = () => {
@@ -6,7 +6,7 @@ const EmpowerMagazine = () => {
         <>
             <div className="abcd_col-5 full-width_abcd b-rad-6_abcd white-bg_abcd p-1_abcd pb-2_abcd ">
                 <div className="img_container_abcd mb-2_abcd">
-                    <Image src={dd_business_mag} alt="dd-business-mag" />
+                    <img src="https://www.designinguru.com/imgs/dd-business-mag.jpg" alt="dd-business-mag" />
                 </div>
                 <h3 className="blue-color_abcd mb-1_abcd h3_abcd">Humble Insights</h3>
                 <p className="mb-2_abcd p_abcd">Investing doesn’t have to be such a gamble. What makes it so risky is the

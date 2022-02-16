@@ -1,6 +1,6 @@
 import Table from './Table';
 import blog_insights from '../../assets/imgs/blog-insights.png'
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const BusinessPerformance = ({ content }) => {
     return (
@@ -29,7 +29,7 @@ const BusinessPerformance = ({ content }) => {
                         </div>
                         <div className="abcd_col-3  full-width_abcd p-1_abcd abcd_bluesection b-rad-12_abcd">
                             <div className="img_container_abcd mt-2_abcd mb-2_abcd">
-                                <Image src={blog_insights} alt="Blog Insights" />
+                                <img src="https://www.designinguru.com/imgs/blog-insights.png" alt="Blog Insights" />
                             </div>
                             <h2 className="mb-3_abcd h2_abcd ">Why support us<span className="colored_abcd">?</span></h2>
                             <ul className="mb-3_abcd ul_abcd">
